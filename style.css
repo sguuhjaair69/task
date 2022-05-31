@@ -10,6 +10,8 @@ body {
 
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
 }
 
@@ -211,12 +213,12 @@ header {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .body{
+/*   .body{
     width: 100vh;
   height: 100vh;
 background-size: cover;
   background-repeat: no-repeat;
-  }
+  } */
   .heading {
     font-size: 2em;
   }
