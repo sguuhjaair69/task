@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ink Free", Times, serif;
+
+  background-image: url('./blob.jpg');
+  height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Ink Free", Times, serif;
+
+}
+
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.info-section{color: #fff;}
+
+.hidden {
+  display: none !important;
+}
+
+
+
+header {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(12, 12, 12);
+  text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 40px #fff,0 0 80px #fff,0 0 120px #fff;
+}
+
+.heading {
+  font-size: 2em;
+  margin: -7px auto;
+  
+
+}
+
+.tile-container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px;
+
+
+  grid-gap: 2px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+.tile-row1,
+.tile-row2,
+.tile-row3,
+.tile-row4,
+.tile-row5,
+.tile-row6,
+.tile-row7,
+.tile-row8,
+.tile-row9,
+.tile-row10,
+.tile-row11,
+.tile-row12,
+.tile-row13,
+.tile-row14,
+.tile-row15,
+.tile-row16 {
+  background-color: #3e3938;
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgb(190, 221, 236);
+  border-radius: 10px;
+  
+}
+/*  
+.tile-row1:hover,
+.tile-row1:focus,
+.tile-row2:hover,
+.tile-row2:focus,
+.tile-row3:hover,
+.tile-row3:focus,
+.tile-row4:hover,
+.tile-row4:focus,
+.tile-row5:hover,
+.tile-row5:focus,
+.tile-row6:hover,
+.tile-row6:focus,
+.tile-row7:hover,
+.tile-row7:focus,
+.tile-row8:hover,
+.tile-row8:focus,
+.tile-row9:hover,
+.tile-row9:focus,
+.tile-row10:hover,
+.tile-row10:focus,
+.tile-row11:hover,
+.tile-row11:focus,
+.tile-row12:hover,
+.tile-row12:focus,
+.tile-row13:hover,
+.tile-row13:focus,
+.tile-row14:hover,
+.tile-row14:focus,
+.tile-row15:hover,
+.tile-row15:focus,
+.tile-row16:hover,
+.tile-row16:focus {
+  background-color: #3e3938;
+}
+*/
+
+.tile-row1:active,
+.tile-row1.activated,
+.tile-row2:active,
+.tile-row2.activated,
+.tile-row3:active,
+.tile-row3.activated,
+.tile-row4:active,
+.tile-row4.activated,
+.tile-row5:active,
+.tile-row5.activated,
+.tile-row6:active,
+.tile-row6.activated,
+.tile-row7:active,
+.tile-row7.activated,
+.tile-row8:active,
+.tile-row8.activated,
+.tile-row9:active,
+.tile-row9.activated,
+.tile-row10:active,
+.tile-row10.activated,
+.tile-row11:active,
+.tile-row11.activated,
+.tile-row12:active,
+.tile-row12.activated,
+.tile-row13:active,
+.tile-row13.activated,
+.tile-row14:active,
+.tile-row14.activated,
+.tile-row15:active,
+.tile-row15.activated,
+.tile-row16:active,
+.tile-row16.activated {
+  background-color: silver;
+}
+
+
+
+.info-section {
+  text-align: center;
+}
+
+.start-button {
+  display: inline-block;
+  font-family: linux', cursive';
+  height: 107px;
+  padding: 0px 12px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: black;
+  border-radius: 0px;
+  border: 6px solid silver;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+.info {
+  font-size: 22px;
+}
+
+@media  only screen and (max-width: 550px) {
+  .game {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .heading {
+    font-size: 2em;
+  }
+
+  .tile-container {
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px 150px;
+  }
+}
