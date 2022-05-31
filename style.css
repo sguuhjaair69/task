@@ -211,7 +211,10 @@ header {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .body{
+  height: 100vh;
 
+  }
   .heading {
     font-size: 2em;
   }
