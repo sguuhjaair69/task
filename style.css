@@ -61,8 +61,8 @@ header {
 
 .tile-container {
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 90px 90px 90px 90px;
+  grid-template-columns: 90px 90px 100px 90px;
 
 
   grid-gap: 2px;
